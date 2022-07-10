@@ -19,7 +19,7 @@ let isApproved = true; // Boolean Literal
 let middleName = undefined; // type is also undefined
 let middleName2 = null; // type is object
 
-// JavaScript is dynamic - change the type of the variable
+// JavaScript is dynamic - type of variables can be changed
 // all numbers - number
 
 let person = {
@@ -32,3 +32,23 @@ person.name = 'Kim';
 let selection = 'name';
 person[selection] = 'Andy';
 console.log(person.name);
+
+let selectedColors = ['red', 'blue']; // Array Literal
+selectedColors[2] = 'green'; // length is dynamic
+selectedColors[3] = 1; 
+console.log(selectedColors); // type of an Array is object
+
+// Performing a task
+function greet(name) {
+    console.log('Hello ' + name);
+} // name is a parameter
+greet('Minseo'); // 'Minseo' is an argument
+greet('Andy');
+
+// Calculating a value
+function square(number) {
+    return number * number;
+}
+
+let number = square(2);
+console.log(number);
